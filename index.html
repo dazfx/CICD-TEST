@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Юридическое Агентство - Профессиональные юридические услуги</title>
+    <meta name="description" content="Профессиональные юридические услуги: судебное представительство, корпоративное право, недвижимость, договоры. Бесплатная консультация.">
+    <meta name="theme-color" content="#1e40af">
+    <meta property="og:title" content="Юридическое Агентство — Профессиональные услуги">
+    <meta property="og:description" content="Надёжная правовая защита. Более 15 лет опыта. Бесплатная консультация.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>⚖️</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <a class="skip-link" href="#home" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Пропустить к содержимому</a>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">⚖️</span>
+                    <span class="logo-text">ЮрАгентство</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#cases">Кейсы</a></li>
+                    <li><a href="#testimonials">Отзывы</a></li>
+                    <li><a href="#team">Команда</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+                <div style="display:flex;gap:0.5rem;align-items:center;">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">🌓</button>
+                    <button class="contact-btn">Консультация</button>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero секция -->
+    <section id="home" class="hero">
+        <canvas id="bg3d" class="bg3d-canvas" aria-hidden="true"></canvas>
+        <div class="hero-decor" aria-hidden="true">
+            <span class="blob blob-1"></span>
+            <span class="blob blob-2"></span>
+            <span class="grid grid-1"></span>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title gradient-text">Профессиональные юридические услуги</h1>
+                <p class="hero-subtitle">Ваша правовая защита в надежных руках. Более 15 лет опыта успешной защиты интересов клиентов</p>
+                <div class="hero-buttons">
+                    <a href="#contacts" class="btn btn-primary btn-glow">Бесплатная консультация</a>
+                    <a href="#services" class="btn btn-secondary">Наши услуги</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Довольных клиентов</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">15</div>
+                        <div class="stat-label">Лет опыта</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Выигранных дел</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Наши услуги</h2>
+                <p class="section-subtitle">Комплексное юридическое сопровождение для физических и юридических лиц</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3 class="service-title">Корпоративное право</h3>
+                    <p class="service-description">Регистрация компаний, оформление документов, сопровождение сделок</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚖️</div>
+                    <h3 class="service-title">Судебное представительство</h3>
+                    <p class="service-description">Защита интересов в судах всех инстанций по гражданским, арбитражным и уголовным делам</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3 class="service-title">Недвижимость</h3>
+                    <p class="service-description">Проверка документов, сопровождение сделок купли-продажи, аренды</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3 class="service-title">Трудовое право</h3>
+                    <p class="service-description">Консультации по трудовым спорам, увольнениям, компенсациям</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📝</div>
+                    <h3 class="service-title">Договорное право</h3>
+                    <p class="service-description">Составление, проверка и экспертиза договоров любой сложности</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3 class="service-title">Защита прав потребителей</h3>
+                    <p class="service-description">Защита интересов потребителей, взыскание компенсаций</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">О нашей компании</h2>
+                    <p class="about-description">
+                        Наше юридическое агентство работает на рынке более 15 лет, предоставляя профессиональные юридические услуги высочайшего качества. Мы объединили команду опытных юристов, адвокатов и специалистов различных областей права.
+                    </p>
+                    <p class="about-description">
+                        Наш подход основан на индивидуальном внимании к каждому клиенту, глубоком анализе ситуации и разработке оптимальных стратегий решения правовых вопросов. Мы гордимся высоким процентом успешных дел и доверием наших клиентов.
+                    </p>
+                    <div class="features">
+                        <div class="feature">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">Опытные специалисты</div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">Индивидуальный подход</div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">Конфиденциальность</div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">Прозрачное ценообразование</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <picture>
+                        <source srcset="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1400&auto=format&fit=crop" type="image/jpeg">
+                        <img class="about-photo reveal" loading="lazy" alt="Команда юридического агентства за работой" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1400&auto=format&fit=crop">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Кейсы -->
+    <section id="cases" class="cases">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Реальные кейсы</h2>
+                <p class="section-subtitle">Результаты, которыми мы гордимся</p>
+            </div>
+            <div class="cases-grid">
+                <article class="case-card reveal">
+                    <div class="case-media">
+                        <img loading="lazy" alt="Корпоративный кейс" src="https://images.unsplash.com/photo-1554224155-1696413565d3?q=80&w=1400&auto=format&fit=crop">
+                    </div>
+                    <div class="case-body">
+                        <h3>Спор акционеров</h3>
+                        <p>За 2 месяца урегулировали корпоративный конфликт и сохранили контроль компании за клиентом.</p>
+                        <div class="case-meta"><span>+100% контроль</span><span>2 месяца</span></div>
+                    </div>
+                </article>
+                <article class="case-card reveal">
+                    <div class="case-media">
+                        <img loading="lazy" alt="Судебный кейс" src="https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?q=80&w=1400&auto=format&fit=crop">
+                    </div>
+                    <div class="case-body">
+                        <h3>Взыскание задолженности</h3>
+                        <p>Выиграли дело о взыскании задолженности по договору поставки на сумму 48 млн ₽.</p>
+                        <div class="case-meta"><span>48 млн ₽</span><span>Арбитраж</span></div>
+                    </div>
+                </article>
+                <article class="case-card reveal">
+                    <div class="case-media">
+                        <img loading="lazy" alt="Недвижимость" src="https://images.unsplash.com/photo-1457694587812-e8bf29a43845?q=80&w=1400&auto=format&fit=crop">
+                    </div>
+                    <div class="case-body">
+                        <h3>Сделка по недвижимости</h3>
+                        <p>Провели комплексную проверку и сопровождение покупки коммерческой недвижимости.</p>
+                        <div class="case-meta"><span>Due diligence</span><span>0 рисков</span></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Отзывы клиентов</h2>
+                <p class="section-subtitle">Нас рекомендуют за результат и сервис</p>
+            </div>
+            <div class="testimonials-grid">
+                <figure class="testimonial-card reveal">
+                    <blockquote>Быстро погрузились в задачу, предложили понятную стратегию и добились нужного решения в суде.</blockquote>
+                    <figcaption><img loading="lazy" alt="Аватар" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop"><div><b>Алексей П.</b><span>Директор по развитию</span></div></figcaption>
+                </figure>
+                <figure class="testimonial-card reveal">
+                    <blockquote>Сопровождение сделки по недвижимости прошло идеально: все риски выявлены и сняты заранее.</blockquote>
+                    <figcaption><img loading="lazy" alt="Аватар" src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=200&auto=format&fit=crop"><div><b>Мария К.</b><span>Предприниматель</span></div></figcaption>
+                </figure>
+                <figure class="testimonial-card reveal">
+                    <blockquote>Компетентно, быстро, прозрачно по цене. Рекомендую для сложных корпоративных вопросов.</blockquote>
+                    <figcaption><img loading="lazy" alt="Аватар" src="https://images.unsplash.com/photo-1546456073-6712f79251bb?q=80&w=200&auto=format&fit=crop"><div><b>Илья Р.</b><span>Собственник бизнеса</span></div></figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Команда -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Наша команда</h2>
+                <p class="section-subtitle">Опытные юристы и адвокаты</p>
+            </div>
+            <div class="team-grid">
+                <article class="team-card reveal">
+                    <div class="team-media"><img loading="lazy" alt="Партнёр, адвокат" src="https://images.unsplash.com/photo-1546525848-3ce03ca516f6?q=80&w=800&auto=format&fit=crop"></div>
+                    <div class="team-body"><h3>Анна Морозова</h3><span>Партнёр, адвокат</span></div>
+                </article>
+                <article class="team-card reveal">
+                    <div class="team-media"><img loading="lazy" alt="Руководитель практики" src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?q=80&w=800&auto=format&fit=crop"></div>
+                    <div class="team-body"><h3>Игорь Ковалёв</h3><span>Руководитель практики корпоративного права</span></div>
+                </article>
+                <article class="team-card reveal">
+                    <div class="team-media"><img loading="lazy" alt="Юрист" src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=800&auto=format&fit=crop"></div>
+                    <div class="team-body"><h3>Елена Сергеева</h3><span>Юрист, судебная практика</span></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Свяжитесь с нами</h2>
+                <p class="section-subtitle">Заполните форму ниже, и мы свяжемся с вами в ближайшее время</p>
+            </div>
+            <div class="contacts-content">
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Имя</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submitBtn">Отправить заявку</button>
+                        <div class="form-status" id="formStatus" aria-live="polite"></div>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3>Телефон</h3>
+                            <p>+7 (495) 123-45-67</p>
+                            <p>+7 (495) 123-45-68</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>info@juragentstvo.ru</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Адрес</h3>
+                            <p>г. Москва, ул. Примерная, д. 10</p>
+                            <p>БЦ "Деловой", офис 505</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div class="contact-details">
+                            <h3>Время работы</h3>
+                            <p>Пн-Пт: 9:00 - 20:00</p>
+                            <p>Сб: 10:00 - 16:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <span class="logo-icon">⚖️</span>
+                        <span class="logo-text">ЮрАгентство</span>
+                    </div>
+                    <p class="footer-description">Профессиональные юридические услуги с 2008 года</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Услуги</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Корпоративное право</a></li>
+                        <li><a href="#services">Судебное представительство</a></li>
+                        <li><a href="#services">Недвижимость</a></li>
+                        <li><a href="#services">Трудовое право</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Компания</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                        <li><a href="#contacts">Консультация</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>info@juragentstvo.ru</p>
+                    <p>г. Москва, ул. Примерная, д. 10</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ЮрАгентство. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "ЮрАгентство",
+      "image": "",
+      "telephone": "+7 (495) 123-45-67",
+      "email": "info@juragentstvo.ru",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Москва",
+        "streetAddress": "ул. Примерная, д. 10"
+      }
+    }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
